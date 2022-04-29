@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Student registration form</title>
+ <link rel="stylesheet" type="text/css" href="attendance.css" />
+<style>
+body{
+background-color: rgb(127, 178, 222);
+}
+.container {
+margin-top:40px;
+padding: 16px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+height:650px;
+width:400px;
+/*margin-right:auto;
+margin-left:auto;*/
+margin-left:800px;
+border-radius: 8px;
+}
+img{
+    float:left;
+    padding: 60px 20px 20px 0;
+}
+form input{
+    border-radius: 5px;
+}
+.table{
+    margin-top:5px;
+}
+
+</style>
+ </head>
+ <img src="images/attendance.png">
+
+ <body class="background-image" >
+    
+ <div class="container" style="background-color:white">
+ <div class="panel-heading text-center">
+ <h1>Attendance Form</h1>
+ </div>
+ <div class="panel-body">
+ <form method="POST" action="attenconn.php">
+
+<div class="form-group">
+ <label for="id">Rollno</label>
+ <input
+ type="text"
+ class="form-control"
+ id="firstName"
+ name="id"
+ />
+ </div>
+ <div class="form-group">
+ <label for="name">Name</label>
+ <input
+ type="text"
+ class="form-control"
+ id="firstName"
+ name="name"
+ />
+ </div>
+ <div class="form-group">
+ <label for="place">Month</label>
+ <input
+ type="text"
+ class="form-control"
+ id="lastName"
+ name="place"
+ />
+ </div>
+ <div class="form-group">
+
+ <div class="form-group">
+ <label for="phno">Contact no</label>
+ <input
+
+ type="number"
+ class="form-control"
+ id="email"
+ name="phno"
+ />
+ </div>
+ <div class="form-group">
+ <label for="cmp">Attendance</label>
+ <input
+ type="text"
+ class="form-control"
+ id="password"
+ name="cmp"
+ />
+ </div>
+ <input type="submit" class="rip" name="ins" value="SUBMIT" style="background-color: rgb(30, 42, 112); " />
+ </form>
+ <form method="POST" action="attentab.php" class="table">
+ <input type="submit" class="rip" name="ins" value="view table"  style="background-color: rgb(30, 42, 112);"/>
+ </form>
+</div>
+ </body>
+</html>

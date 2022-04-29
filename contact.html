@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="contact.css" />
+    <style>
+      body{
+        background-color:  rgb(127, 178, 222);
+      }
+     img{
+       padding-top:120px;
+     }
+      button {
+        background-color: #04aa6d;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="background-image">
+    <img src="images/contact.png">
+    <div class="container" style="float: right; margin-right: 100px;margin-top:20px ;">
+      <h3>Contact Form</h3>
+      <form
+        action="/action_page.php"
+       
+      >
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">ID</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 100px"
+        ></textarea>
+        <button formaction="home.html" style="background-color:rgb(30, 42, 112);border-radius: 5px;">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
